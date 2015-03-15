@@ -63,8 +63,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IssueStatusReport.cs" />
-    <Compile Include="IssueSummary.cs" />
+    <Compile Include="Models\IssueStatusReport.cs" />
+    <Compile Include="Models\IssueSummary.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

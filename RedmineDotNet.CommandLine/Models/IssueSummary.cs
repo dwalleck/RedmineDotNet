@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RedmineDotNet.CommandLine
+namespace RedmineDotNet.CommandLine.Models
 {
     public class IssueSummary
     {
