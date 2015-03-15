@@ -1,0 +1,126 @@
+﻿@model RedmineDotNet.CommandLine.IssueStatusReport
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Welcome</title>
+    <style type="text/css">
+        h2, h3 {
+            font-family: arial;
+        }
+
+        body {
+            font-family: arial;
+            font-size: 11pt;
+        }
+
+        table {
+            font-family: arial;
+            border-collapse: collapse;
+        }
+
+        table, td, th {
+            border: 1px solid black;
+            margin: 0;
+        }
+
+        .heading {
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .name {
+            text-align: left;
+        }
+
+        .count-heading {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .count {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<h2>Summary of Open Issues</h2>
+<h3>Average issue age: @Model.OpenIssues.AverageAge days</h3>
+<table cellpadding="3" cellspacing="0">
+    <tr>
+        <th class="heading">Priority</th>
+        <th class="count-heading">Count</th>
+    </tr>
+    @foreach (var item in Model.OpenIssues.GroupedIssues)
+    {
+        <tr>
+            <td class="name">
+                @item.Key
+            </td>
+            <td class="count">
+                @item.Count()
+            </td>
+        </tr>
+    }
+</table>
+
+<h2>New Issues for the Week</h2>
+<table cellpadding="3" cellspacing="0">
+    <tr>
+        <th class="heading">Priority</th>
+        <th class="count-heading">Count</th>
+    </tr>
+    @foreach (var item in Model.NewIssues.GroupedIssues)
+    {
+        <tr>
+            <td class="name">
+                @item.Key
+            </td>
+            <td class="count">
+                @item.Count()
+            </td>
+        </tr>
+    }
+</table>
+
+<h2>Updated Issues for the Week</h2>
+<table cellpadding="3" cellspacing="0">
+    <tr>
+        <th class="heading">Priority</th>
+        <th class="count-heading">Count</th>
+    </tr>
+    @foreach (var item in Model.UpdatedIssues.GroupedIssues)
+    {
+        <tr>
+            <td class="name">
+                @item.Key
+            </td>
+            <td class="count">
+                @item.Count()
+            </td>
+        </tr>
+    }
+</table>
+
+<h2>Closed Issues for the Week</h2>
+<table cellpadding="3" cellspacing="0">
+    <tr>
+        <th class="heading">Priority</th>
+        <th class="count-heading">Count</th>
+    </tr>
+    @foreach (var item in Model.ClosedIssues.GroupedIssues)
+    {
+        <tr>
+            <td class="name">
+                @item.Key
+            </td>
+            <td class="count">
+                @item.Count()
+            </td>
+        </tr>
+    }
+</table>
+
+</html>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedmineDotNet", "RedmineDotNet\RedmineDotNet.csproj", "{CA093661-D9E4-4ABD-BFDD-518BD23D2DE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedmineDotNet.CommandLine", "RedmineDotNet.CommandLine\RedmineDotNet.CommandLine.csproj", "{9BCA26AD-7AFE-42DB-B5D5-C53D04A43E75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA093661-D9E4-4ABD-BFDD-518BD23D2DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA093661-D9E4-4ABD-BFDD-518BD23D2DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA093661-D9E4-4ABD-BFDD-518BD23D2DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA093661-D9E4-4ABD-BFDD-518BD23D2DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BCA26AD-7AFE-42DB-B5D5-C53D04A43E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BCA26AD-7AFE-42DB-B5D5-C53D04A43E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BCA26AD-7AFE-42DB-B5D5-C53D04A43E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BCA26AD-7AFE-42DB-B5D5-C53D04A43E75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
